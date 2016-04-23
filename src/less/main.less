@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
+@smoke: whitesmoke;
+@asvalt: #1e2633;
+@white: white;
+@blue: royalblue;
+@font: 'ubuntu', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    color: @white;
+    background-color: @asvalt;
+    font-family: @font;
+}
+.join {
+  color: green;
+}
+.list {
+  color: white;
+  font-size: 26px;
+}
+.leave {
+  color: red;
+}
+.lp-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  text-align: center;
+}
+#lp-form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+#lp-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  font-size: 150%;
+  letter-spacing: 3px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+  color: white;
+}
+#lp-form h3 {
+  font-weight: 100;
+  margin: 2%;
+  font-size: 200%;
+}
+.container {
+  position: relative;
+}
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+.welcome {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  margin: 2%;
+}
+.message {
+  margin: 5px;
+}
+.nick {
+  font-size: 28px;
+  margin: 15px;
+}
+#chatInput {
+  font-size: 150%;
+  color: white;
+  border-radius: 3px;
+  background-color: @asvalt;
+  border: none;
+  border-top: 7px solid @blue;
+  position: fixed;
+  left: 0; bottom: 0;
+  height: 60px;
+  outline: none;
+  padding-left: 10px;
+  width: 100%;
+}
