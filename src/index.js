@@ -5,7 +5,6 @@ import List from './components/List'
 import LoginPage from './components/LoginPage'
 require('./less/main.less');
 var socket = io();
-let colArr = ['black', 'pink', 'red', 'yellow', 'green'];
 
 class App extends Component {
   constructor() {

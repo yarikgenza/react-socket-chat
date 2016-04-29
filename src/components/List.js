@@ -3,6 +3,11 @@ import Message from './Message';
 
 export default class List extends Component {
 
+  componentDidUpdate() {
+      document.getElementById('scrl').scrollTop += 9999
+  }
+
+
   render() {
 
     const {typing, username, color} = this.props
@@ -35,8 +40,8 @@ export default class List extends Component {
 
     if(typing && username !== '') {
       return(
-        <div className="list">
-          <ul>
+        <div className="list" id="scrl">
+          <ul id="l">
           <div className="welcome">
              <h1>Welcome to socket-react chat!</h1>
           </div>
@@ -49,8 +54,8 @@ export default class List extends Component {
        )
   } else {
     return (
-      <div className="list">
-        <ul>
+      <div id="scrl" className="list">
+        <ul id="l">
          <div className="welcome">
             <h1>Welcome to socket-react chat!</h1>
          </div>
